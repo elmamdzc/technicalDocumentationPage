@@ -1,0 +1,176 @@
+*{  
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+
+#navbar
+{
+    width: 25%;
+    flex-shrink: 0;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+#navbar header
+{
+    background: rgb(56, 54, 54);
+    color: rgb(211, 59, 84);
+    font-size: 25pt;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+    max-width: 100%;
+    position: relative;
+}
+
+#navbar ul
+{
+    background: rgb(211, 59, 84);
+    overflow-y: scroll;
+    height: 510px; 
+}
+
+#navbar li
+{
+    border-bottom: 1px solid rgb(56, 54, 54);
+    padding: 10px;
+}
+
+#navbar a
+{
+    text-decoration: none;
+    color: rgb(56, 54, 54);
+    font-size: 18pt;
+}
+
+#navbar ul::-webkit-scrollbar {
+    width: 12px;
+    background: rgb(56, 54, 54);
+}
+ 
+ 
+#navbar ul::-webkit-scrollbar-thumb {
+  background: rgb(192, 180, 180);
+  border: 2px solid rgb(241, 99, 123);
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 18px;
+    background: rgb(56, 54, 54);
+}
+ 
+ 
+body::-webkit-scrollbar-thumb {
+  background: rgb(192, 180, 180);
+  border: 2px solid rgb(241, 99, 123);
+  border-radius: 20px;
+}
+
+
+
+#main-doc
+{
+    width: 75%;
+    background: rgb(82, 78, 78);
+    color: rgb(192, 180, 180);
+    float: right;
+}
+
+.main-section
+{
+    padding: 30px 30px 0 30px;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+.main-section header
+{
+    font-weight: bold;
+    color:rgb(240, 65, 94);
+    font-size: 25pt;
+    margin-bottom: 10px;
+}
+
+.main-section p
+{
+    padding-left:20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.main-section ul, .main-section dt
+{
+    padding-left:60px;
+}
+
+.code
+{
+    background: rgb(197, 189, 189);
+    margin: 20px 30px 20px 50px;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 2;
+    border-radius: 15px;
+
+}
+
+.main-section dd
+{
+padding-left: 90px;
+}
+
+.main-section dd, .main-section dt, .main-section dl
+{
+    list-style-type: circle;
+}
+
+#link
+{
+    color: rgb(124, 13, 32);
+}
+
+@media screen and (max-width: 1050px)
+{
+    body 
+    {
+        overflow-x: hidden;
+    }
+
+    #navbar
+    {
+        height: 250px;
+        position: absolute;
+        width: 100%;
+    }
+
+    #main-doc
+    {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #navbar header
+    {
+        height: 50px
+    }
+
+    #navbar ul
+    {
+        overflow-y: scroll;
+        height: 110px;
+        position: relative;
+    }
+    
+    body::-webkit-scrollbar {
+
+        background: rgb(214, 207, 207);
+    }
+}
+
+
+
